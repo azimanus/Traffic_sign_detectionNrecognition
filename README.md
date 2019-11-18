@@ -47,13 +47,13 @@ activate labelImg
 + inside TensorFlow directory, we create new directory ‘addons’
 
 TensorFlow
-├─ addons
-│   └── labelImg
-└─ models
-    ├── official
-    ├── research
-    ├── samples
-    └── tutorials
+-> addons
+    ->labelImg
+->models
+    -> official
+    -> research
+    -> samples
+    -> tutorials
 + clone labelImg repo
 git clone https://github.com/tzutalin/labelImg.git
 + install dependencies:
@@ -68,25 +68,25 @@ II. Training Custom Object Detection:
 1. Workspace organization
 + create new folder “workspace” under TensorFlow directory, and another one “training-demo” under “workspace” just have been created:
 
-├─ addons
-│   └─ labelImg
-├─ models
-│   ├─ official
-│   ├─ research
-│   ├─ samples
-│   └─ tutorials
-└─ workspace
-    └─ training_demo
+-> addons
+    -> labelImg
+-> models
+    -> official
+    -> research
+    -> samples
+    -> tutorials
+-> workspace
+    -> training_demo
     
 + under “training-demo”  folder we add sub-folders: 
 
-├─ annotations
-├─ images
-│   ├─ test
-│   └─ train
-├─ pre-trained-model
-├─ training
-└─ README.md
+-> annotations
+-> images
+    -> test
+    -> train
+-> pre-trained-model
+-> training
+-> README.md
 
 2. preparing annotations
 here we use labelImg to annotate our own dataset. One we collect images for diffrent classes we start labeling operation
@@ -98,18 +98,19 @@ a file that maps each label (class name) to an id [label_map.pbtxt]. It should b
 training-demo/annotations folder.
 3. generate tf records
 we add “scripts” and “scripts/preprocessing” folders
+
 TensorFlow
-├─ addons
-│   └─ labelImg
-├─ models
-│   ├─ official
-│   ├─ research
-│   ├─ samples
-│   └─ tutorials
-├─ scripts
-│   └─ preprocessing
-└─ workspace
-    └─ training_demo
+-> addons
+   -> labelImg
+-> models
+   -> official
+   -> research
+   -> samples
+   -> tutorials
+-> scripts
+   -> preprocessing
+-> workspace
+    -> training_demo
 
 + converting *.xml to *.csv
 under ‘scripts/preprocessing’run xml_to_csv.py script
