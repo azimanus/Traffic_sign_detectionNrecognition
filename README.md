@@ -48,12 +48,12 @@ $ activate labelImg<br>
 
 TensorFlow<br>
 ... addons<br>
-    &nbsp;... labelImg<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... labelImg<br>
 ... models<br>
-    &nbsp;... official<br>
-    &nbsp;... research<br>
-    &nbsp;... samples<br>
-    &nbsp;... tutorials<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... official<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... research<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... samples<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... tutorials<br>
     
 + clone labelImg repo<br>
 $ git clone https://github.com/tzutalin/labelImg.git<br>
@@ -70,21 +70,21 @@ II. Training Custom Object Detection:<br>
 + create new folder “workspace” under TensorFlow directory, and another one “training-demo” under “workspace” just have been created:<br>
 
 ... addons<br>
-    &nbsp;... labelImg<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... labelImg<br>
 ... models<br>
-    &nbsp;... official<br>
-    &nbsp;... research<br>
-    &nbsp;... samples<br>
-   &nbsp; ... tutorials<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... official<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... research<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... samples<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... tutorials<br>
 ... workspace<br>
-    &nbsp;... training_demo<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... training_demo<br>
     
 + under “training-demo”  folder we add sub-folders: <br>
 
 ... annotations<br>
 ... images<br>
-    &nbsp;... test<br>
-    &nbsp;... train<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... test<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... train<br>
 ... pre-trained-model<br>
 ... training<br>
 ... README.md<br>
@@ -102,16 +102,16 @@ we add “scripts” and “scripts/preprocessing” folders<br>
 
 TensorFlow<br>
 ... addons<br>
-   &nbsp;... labelImg<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... labelImg<br>
 ... models<br>
-  &nbsp; ... official<br>
-  &nbsp; ... research<br>
-  &nbsp; ... samples<br>
-  &nbsp; ... tutorials<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... official<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... research<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... samples<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... tutorials<br>
 ... scripts<br>
-  &nbsp; ... preprocessing<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... preprocessing<br>
 ... works<br>
-   &nbsp; ... training_demo<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... training_demo<br>
 
 + converting *.xml to *.csv<br>
 - under ‘scripts/preprocessing’run xml_to_csv.py script <br>  
