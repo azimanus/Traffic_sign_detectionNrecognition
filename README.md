@@ -44,16 +44,16 @@ $ python setup.py install
 + create new conda environment
 $ conda create -n labelImg pyqt=5
 $ activate labelImg
-+ inside TensorFlow directory, we create new directory ‘addons’
++ inside TensorFlow directory, we create new directory ‘addons’<br>
 
-TensorFlow
-... addons
-    ... labelImg
-... models
-    ... official
-    ... research
-    ... samples
-    ... tutorials
+TensorFlow<br>
+... addons<br>
+    ... labelImg<br>
+... models<br>
+    ... official<br>
+    ... research<br>
+    ... samples<br>
+    ... tutorials<br>
     
 + clone labelImg repo
 $ git clone https://github.com/tzutalin/labelImg.git
