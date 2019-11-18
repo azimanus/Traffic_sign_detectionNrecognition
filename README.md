@@ -1,6 +1,4 @@
 # Traffic_sign_detectionNrecognition
-PFA : 
-Traffic signs detection
 
 This Project is based on the tutorial: 
 https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html
@@ -69,6 +67,7 @@ python labelImg.py
 II. Training Custom Object Detection:
 1. Workspace organization
 + create new folder “workspace” under TensorFlow directory, and another one “training-demo” under “workspace” just have been created:
+
 ├─ addons
 │   └─ labelImg
 ├─ models
@@ -78,7 +77,9 @@ II. Training Custom Object Detection:
 │   └─ tutorials
 └─ workspace
     └─ training_demo
+    
 + under “training-demo”  folder we add sub-folders: 
+
 ├─ annotations
 ├─ images
 │   ├─ test
@@ -145,9 +146,8 @@ https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc
 +initiate training:
 python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_inception_v2_coco.config
 
-6. export resulting model
-
 III. DETECTION
+
 python detect.py
 
 
